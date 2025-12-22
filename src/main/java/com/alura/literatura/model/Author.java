@@ -22,6 +22,7 @@ public class Author {
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "authors" )
     private Set<Book> books = new HashSet<>();
 
+
     public Author() {}
 
     public Author(DataAuthor a) {
